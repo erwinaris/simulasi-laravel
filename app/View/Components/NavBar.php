@@ -1,0 +1,42 @@
+<?php
+
+namespace App\View\Components;
+
+use Illuminate\View\Component;
+
+class NavBar extends Component
+{
+    /**
+     * Create a new component instance.
+     *
+     * @return void
+     */
+   
+
+    public function navbar()
+    {
+        $nav = [
+            'home' => '/',
+            'todo lists' => '/todo-list',
+            'mahasiswa' => '/mahasiswa',
+        ];
+
+        return $nav;
+    }
+
+    
+    public function __construct()
+    {
+
+    }
+
+    /**
+     * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\Contracts\View\View|\Closure|string
+     */
+    public function render()
+    {
+        return view('components.navbar.nav-bar', );
+    }
+}

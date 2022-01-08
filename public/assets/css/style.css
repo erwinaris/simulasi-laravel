@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: salmon;
+}
+
+.container {
+    margin: auto 150px;
+}
+
+.navbar {
+    color: blueviolet;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.navbar ul {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+a {
+    color: rgb(6, 6, 19);
+    padding: 10px;
+    text-decoration: none;
+    transition: 3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 50px;
+}
+
