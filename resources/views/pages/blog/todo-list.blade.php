@@ -49,11 +49,16 @@
     <div class="col-md-3">
 
       <input type="text" name="lists" placeholder="masukan todo list kamu" class="form-control @error('todo') is-invalid @enderror" value="{{ old('todo') }}" required>
-      @error('todo')
+      {{-- @error('todo')
         <div class="invalid-feedback">
           {{ $message }}
         </div>
-      @enderror
+      @enderror --}}
+      
+      <div class="invalid-feedback">
+        masukan todo list
+      </div>
+      
     </div>
     <div class="col-md-3">
       <x-button typeButton="submit" classButton="btn btn-primary" valueButton="tambah" />
